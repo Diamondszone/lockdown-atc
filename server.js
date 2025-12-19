@@ -4,11 +4,11 @@ import axios from "axios";
 
 const SOURCE_URL =
   process.env.SOURCE_URL ||
-  "https://ampnyapunyaku.top/api/lockdown-atc/node.txt";
+  "";
 
 const CORS_PROXY =
   process.env.CORS_PROXY ||
-  "https://cors-anywhere-railway-production.up.railway.app";
+  "";
 
 // ────────────── PARSER ──────────────
 function parseList(txt) {
@@ -136,4 +136,5 @@ app.listen(process.env.PORT || 3000, () =>
 
 // Mulai mesin
 mainLoop();
+
 
